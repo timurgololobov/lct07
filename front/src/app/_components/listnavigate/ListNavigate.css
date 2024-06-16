@@ -1,0 +1,40 @@
+.links-list {
+    position: absolute;
+    top:0;
+    left:0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+}
+
+.links-list li {
+    margin-bottom: 5px; /* Расстояние между кнопками */
+}
+
+.link {
+    display: block;
+    
+    background-color: #f2f2f2; /* Основной цвет кнопок */
+    
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.link:hover {
+    background-color: #ddd; /* Цвет при наведении */
+}
+
+.active {
+    background-color: #3498db; /* Цвет активной ссылки */
+    color: white;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
